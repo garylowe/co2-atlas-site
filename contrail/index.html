@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contrail Tracker – Support</title>
+<meta name="description" content="Support for Contrail Tracker, an iPhone and iPad app that shows the aircraft above you and predicts their contrails.">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main>
+<h1>Contrail Tracker</h1>
+<p class="dim">Support</p>
+
+<p>Contrail Tracker shows the airliners above you and predicts, for each one, whether it will leave no trail, a short one, a long one or a persistent, spreading one, from the temperature and humidity at its altitude.</p>
+
+<div class="card">
+<strong>Contact</strong><br>
+Questions, bug reports or corrections: <a href="mailto:gary@sugarloafdesign.co.uk?subject=Contrail%20Tracker">gary@sugarloafdesign.co.uk</a><br>
+<span class="dim">Please include your device model, iOS version and roughly where you were for bugs. If a prediction looked wrong, a photo of the sky and the time helps.</span>
+</div>
+
+<h2>Common questions</h2>
+
+<p><strong>Where does the data come from?</strong><br>
+Live aircraft come from adsb.lol (© adsb.lol contributors, ODbL 1.0), with the OpenSky Network as a backup. Aircraft types and routes come from adsbdb.com. Temperature, humidity, wind and cloud at flight level come from Open-Meteo forecast models.</p>
+
+<p><strong>How does it decide whether a plane leaves a trail?</strong><br>
+It uses the Schmidt–Appleman criterion, the standard method in atmospheric science, to find whether the exhaust plume reaches water saturation at the aircraft’s altitude. How long the trail lasts then depends on the humidity with respect to ice. The How it works page in the app explains the method and its limits.</p>
+
+<p><strong>Why did a plane leave a trail the app said wouldn’t form, or the other way round?</strong><br>
+The weather at cruise height is a forecast, not a measurement, and forecasts tend to under-read humidity up there. That is why the app shows ranges. Predictions are least certain near the edges between categories.</p>
+
+<p><strong>Why are all the trails the same type today?</strong><br>
+The air at cruise height is often dry or humid across a wide area, so one type dominates. Turn on Demo mode in Settings to see every kind.</p>
+
+<p><strong>What does the OpenSky account do?</strong><br>
+It is optional. It turns on Recent flights for each aircraft and raises OpenSky’s backup traffic limit. Create a free account at opensky-network.org, then add an API client in Settings.</p>
+
+<p><strong>Privacy</strong><br>
+The app has no accounts, analytics or tracking. See the <a href="privacy.html">privacy policy</a>.</p>
+
+<footer>
+© 2026 Gary Lowe · <a href="privacy.html">Privacy policy</a><br>
+Data: adsb.lol contributors (ODbL 1.0), OpenSky Network, adsbdb.com, Open-Meteo. Contrail Tracker is not affiliated with or endorsed by any of them.
+</footer>
+</main>
+</body>
+</html>
